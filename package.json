@@ -1,0 +1,30 @@
+{
+  "name": "freshplanet-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node-dev --transpile-only --no-notify --exit-child src/index.ts",
+    "start": "node dist/src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/annepinson/freshplanet-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/annepinson/freshplanet-test/issues"
+  },
+  "homepage": "https://github.com/annepinson/freshplanet-test#readme",
+  "dependencies": {
+    "apollo-server": "^3.7.0",
+    "graphql": "^16.4.0"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.6.4"
+  }
+}
