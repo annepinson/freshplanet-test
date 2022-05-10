@@ -1,8 +1,15 @@
 import { ApolloServer } from "apollo-server";
-import { resolvers } from "./resolvers";
+import resolvers from "./resolvers";
 import { typeDefs } from "./typeDefs";
+import { makeExecutableSchema } from "graphql-tools";
 
-const server = new ApolloServer({ typeDefs, resolvers });
+
+export const schema = makeExecutableSchema({
+    typeDefs: typeDefs,
+    resolvers: resolvers,
+  });
+
+const server = new ApolloServer({ schema, });
 
 const port = 3000;
 
