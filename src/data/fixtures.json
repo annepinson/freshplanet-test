@@ -1,0 +1,135 @@
+{"forums" : [
+    {
+      "forumId": 1,
+      "name": "Jasmin Forum",
+      "messages": [1,5,8],
+      "users": [1,2,3,4]
+    },
+    {
+      "forumId": 2,
+      "name": "Rose Forum",
+      "messages": [2,6,9],
+      "users": [1,2,3]
+    },
+    {
+      "forumId": 3,
+      "name": "Periwinkle Forum",
+      "messages": [3,7],
+      "users": [1,2,4]
+    },
+    {
+      "forumId": 4,
+      "name": "Lily Forum",
+      "messages": [4],
+      "users": [2, 4]
+    },
+    {
+      "forumId": 5,
+      "name": "Mimosa Forum",
+      "messages": [],
+      "users": [2]
+    },
+    {
+      "forumId": 6,
+      "name": "Hydrangea Forum",
+      "messages": [],
+      "users": [3]
+    }],
+  "users" : [
+    {
+      "id": 1,
+      "userName": "Sapphire",
+      "picture": "https://source.unsplash.com/random",
+      "forums": [1,2,3]
+    },
+    {
+      "id": 2,
+      "userName": "Diamond",
+      "picture": "https://source.unsplash.com/random",
+      "forums": [1,2,3,4,5]
+    },
+    {
+      "id": 3,
+      "userName": "Ruby",
+      "picture": "https://source.unsplash.com/random",
+      "forums": [1,2,6]
+    },
+    {
+      "id": 4,
+      "userName": "Emerald",
+      "picture": "https://source.unsplash.com/random",
+      "forums": [1,3,4]
+    },
+    {
+      "id": 5,
+      "userName": "Topaz",
+      "picture": "https://source.unsplash.com/random",
+      "forums": []
+    }
+  ],
+  "messages": [
+    {
+      "messageId": 1,
+      "text": "Vanity and pride are different things, though the words are often used synonymously. A person may be proud without being vain. Pride relates more to our opinion of ourselves, vanity to what we would have others think of us.",
+      "sendingTime": "2022-10-01T10:15:30Z",
+      "forum": 1,
+      "user": 1
+    },
+    {
+      "messageId": 2,
+      "text": "There is, I believe, in every disposition a tendency to some particular evil—a natural defect, which not even the best education can overcome.",
+      "sendingTime": "2022-10-02T11:16:11Z",
+      "forum": 2,
+      "user": 1
+    },
+    {
+      "messageId": 3,
+      "text": "Nothing is more deceitful…than the appearance of humility. It is often only carelessness of opinion, and sometimes an indirect boast.",
+      "sendingTime": "2022-10-03T08:15:30Z",
+      "forum": 3,
+      "user": 2
+    },
+    {
+      "messageId": 4,
+      "text": "A person who can write a long letter with ease, cannot write ill.",
+      "sendingTime": "2022-10-04T01:30:30Z",
+      "forum": 4,
+      "user": 2
+    },
+    {
+      "messageId": 5,
+      "text": "Is not general incivility the very essence of love?",
+      "sendingTime": "2022-10-05T02:15:30Z",
+      "forum": 1,
+      "user": 3
+    },
+    {
+      "messageId": 6,
+      "text": "For what do we live, but to make sport for our neighbors, and laugh at them in our turn?",
+      "sendingTime": "2022-10-06T04:15:30Z",
+      "forum": 2,
+      "user": 3
+    },
+    {
+      "messageId": 7,
+      "text": "Do anything rather than marry without affection.",
+      "sendingTime": "2022-10-07T10:16:30Z",
+      "forum": 3,
+      "user": 4
+    },
+    {
+      "messageId": 8,
+      "text": "But people themselves alter so much, that there is something new to be observed in them for ever.",
+      "sendingTime": "2022-10-08T09:15:30Z",
+      "forum": 1,
+      "user": 3
+    },
+    {
+      "messageId": 9,
+      "text": "You showed me how insufficient were all my pretensions to please a woman worthy of being pleased.",
+      "sendingTime": "2022-10-09T11:06:01Z",
+      "forum": 2,
+      "user": 3
+    }
+  ]
+}
