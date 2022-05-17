@@ -1,4 +1,4 @@
-const data = require('../data/fixtures.json');
+import data from '../data/fixtures.json';
 
 export class User {
   static all() {

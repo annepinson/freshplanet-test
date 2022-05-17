@@ -1,5 +1,5 @@
 import { ApolloServer } from 'apollo-server';
-import resolvers from './resolvers';
+import { resolvers } from './resolvers';
 import { typeDefs } from './typeDefs';
 import { makeExecutableSchema } from 'graphql-tools';
 
@@ -8,7 +8,11 @@ export const schema = makeExecutableSchema({
   resolvers: resolvers,
 });
 
-const server = new ApolloServer({ schema });
+// The authentication of an user is supposed to be done, here the login user is the user 1.
+const server = new ApolloServer({
+  schema,
+  context: () => ({ loginUserId: 1 }),
+});
 
 const port = 3000;
 

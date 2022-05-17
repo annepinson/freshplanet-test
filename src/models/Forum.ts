@@ -1,4 +1,4 @@
-import * as data from '../data/fixtures.json';
+import data from '../data/fixtures.json';
 
 export class Forum {
   static all() {

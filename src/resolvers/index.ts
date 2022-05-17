@@ -1,6 +1,6 @@
-const resolvers = {
-  Query: {
-  },
-};
+import { forumResolver } from './forumResolver';
+import { messaageResolver } from './messageResolver';
+import { queryResolver } from './queryResolver';
+import { userResolver } from './userResolver';
 
-export default resolvers;
+export const resolvers = [queryResolver, forumResolver, userResolver, messaageResolver]
