@@ -1,4 +1,4 @@
-# Freshplanet Coding Test -- Chat App
+# Freshplanet Coding Test -- Chat App Part 1
 
 ## Setup for development
 
@@ -11,8 +11,8 @@
 ## Authentication
 
 Since the authentication of the user is supposed to be done, the id of the user is put in the "Authorization" parameter of the request headers, which can easily be set in the Apollo Sandbox.
-This id is used in several queries, for example to create a new forum or to post a new message. 
-A verification of the authorization to do some requests (for exemple to check that the login user is in the forum if he searchs for the users of a forum) could also be done. 
+This id is used in several queries, for example to create a new forum or to post a new message.
+A verification of the authorization to do some requests (for exemple to check that the login user is in the forum if he searchs for the users of a forum) could also be done.
 
 ## GraphQL Schema
 
@@ -51,12 +51,12 @@ classDiagram
       userForums() Forum[]
       allForums() Forum[]
       messages(forumId: ID!) Message[]
-      users(forumId: ID!) User[]
+      forumUsers(forumId: ID!) User[]
     }
 
     class Mutation {
-      createForum(userId: ID!, name: String) Forum
-      joinForum(forumId: ID!) Forum
-      postMessage(forumId: ID!, sendingTime: Date!, text: String!) Message
+      createForum(name: String) ID
+      joinForum(forumId: ID!) ID
+      postMessage(forumId: ID!, sendingTime: Date!, text: String!) ID
     }
 ```

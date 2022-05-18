@@ -11,7 +11,7 @@ export const forumType = gql`
     """
     A forum has also a name, which could be seen by users
     """
-    name: String!
+    name: String
 
     """
     At least one user is part of the forum, the creator, since people can't leave the forums
