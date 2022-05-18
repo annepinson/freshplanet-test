@@ -10,9 +10,9 @@
 
 ## Authentication
 
-Since the authentication of the user is supposed to be done, the id of the user is put in the "Authorization" parameter of the request headers, which can easily be set in the Apollo Sandbox.
+Since the authentication of the user is supposed to be done, the id of the user is put in the "Authorization" parameter of the request headers, which can easily be set in the Apollo Sandbox. In the `fixtures.json` file there is 5 users, and the different userId are: 1, 2, 3, 4, 5.
 This id is used in several queries, for example to create a new forum or to post a new message.
-A verification of the authorization to do some requests (for exemple to check that the login user is in the forum if he searchs for the users of a forum) could also be done.
+A verification of the authorization to do some requests (for exemple to check that the login user is in the forum if he looks for the users of a forum) could also be done.
 
 ## GraphQL Schema
 
