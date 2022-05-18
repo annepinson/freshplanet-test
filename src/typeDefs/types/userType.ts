@@ -1,4 +1,4 @@
-const { gql } = require('apollo-server');
+import { gql } from 'apollo-server';
 
 export const userType = gql`
   "This type corresponds to an user of the Chat App, users can be part of forums and interact by sending messages."

@@ -1,4 +1,4 @@
-const { gql } = require('apollo-server');
+import { gql } from 'apollo-server';
 
 export const messageType = gql`
   "This type corresponds to the messages on the Chat App, one message is emitted by an user in a forum."

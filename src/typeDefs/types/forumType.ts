@@ -1,4 +1,4 @@
-const { gql } = require('apollo-server');
+import { gql } from 'apollo-server';
 
 export const forumType = gql`
   "This type corresponds to the forums on the Chat App, which can be joined by users to communicate on it."
@@ -19,7 +19,7 @@ export const forumType = gql`
     users: [User!]!
 
     """
-    Messages are exchanged on the forum between users, but a forum can be empty.
+    Messages are exchanged on the forum between users, but a forum can be empty of messages.
     """
     messages: [Message!]
   }

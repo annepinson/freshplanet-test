@@ -4,10 +4,10 @@ import { User } from "../models/User";
 export const forumResolver = {
     Forum :{
         users(parent) {
-            return User.all().filter((user) => user.forums.includes(parent.forumId));
+            return User.getAll().filter((user) => user.forums.includes(parent.forumId));
             },
         messages(parent) {
-            return Message.all().filter((message) => message.forum == parent.forumId)
+            return Message.getAll().filter((message) => message.forum == parent.forumId)
         }
     }
 }

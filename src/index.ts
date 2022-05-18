@@ -11,7 +11,7 @@ export const schema = makeExecutableSchema({
 // The authentication of an user is supposed to be done, here the login user is the user 1.
 const server = new ApolloServer({
   schema,
-  context: () => ({ loginUserId: 1 }),
+  context: ({req}) => ({ loginUserId: req.headers.authorization}),
 });
 
 const port = 3000;

@@ -8,6 +8,12 @@
 4. To launch the server, run `npm run dev`
 5. You will be able to execute queries at http://localhost:3000
 
+## Authentication
+
+Since the authentication of the user is supposed to be done, the id of the user is put in the "Authorization" parameter of the request headers, which can easily be set in the Apollo Sandbox.
+This id is used in several queries, for example to create a new forum or to post a new message. 
+A verification of the authorization to do some requests (for exemple to check that the login user is in the forum if he searchs for the users of a forum) could also be done. 
+
 ## GraphQL Schema
 
 In order to be able to correctly preview the [mermaid](https://mermaid-js.github.io/mermaid/#/) diagrams and charts coded in the markdown files, you need to install a Mermaid extension on your editor. <br>
